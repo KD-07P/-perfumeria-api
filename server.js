@@ -1,6 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+console.log('DB_HOST configurado:', process.env.DB_HOST ? 'SI' : 'NO');
+console.log('DB_PORT configurado:', process.env.DB_PORT ? 'SI' : 'NO');
+console.log('DB_USER configurado:', process.env.DB_USER ? 'SI' : 'NO');
+console.log('DB_PASSWORD configurado:', process.env.DB_PASSWORD ? 'SI' : 'NO');
+console.log('DB_NAME configurado:', process.env.DB_NAME ? 'SI' : 'NO');
 
 const db = require('./config/db');
 const categoriaRoutes = require('./routes/categoriaRoutes');
